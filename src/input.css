@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /*font family dana*/
+    @font-face {
+        font-family: "Dana";
+        src: local("Dana") , url("../fonts/dana/dana-regular.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Dana Medium";
+        src: local("Dana") , url("../fonts/dana/dana-medium.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Dana bold";
+        src: local("Dana") , url("../fonts/dana/dana-bold.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    /*font family Emkan*/
+    @font-face {
+        font-family: "Emkan";
+        src: local("Emkan") , url("../fonts/Emkan/Emkan-Regular.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Emkan Medium";
+        src: local("Emkan") , url("../fonts/Emkan/Emkan-Bold.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Emkan bold";
+        src: local("Emkan") , url("../fonts/Emkan/Emkan-Black.woff2") format("woff2");
+        font-display: swap;
+    }
+    .home{
+        background-image: url("../image/headerBgDesktop.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .circle{
+        @apply  flex items-center justify-center border  rounded-full;
+    }
+    .circle--mine{
+      @apply  absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 hidden md:flex;
+    }
+    .circle--lg{
+        @apply w-[203px] h-[203px] border-white/25;
+    }
+    .circle--md{
+        @apply w-[145px] h-[145px] border-white/50;
+    }
+    .circle--sm{
+        @apply w-[95px] h-[95px] border-white/80;
+    }
+
+    @media screen and  (min-width: 1280px){
+        html.dark .products{
+            background-image: url("../image/products.png");
+        }
+        .products{
+            background:linear-gradient(rgb(243 , 244 , 246 , 0.65) , rgb(243 , 244 , 246 , 0.65)), url("../image/products.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+
+
+
+
+    .section-title{
+    @apply text-2xl  md:text-5xl font-EmkanMedium text-zinc-700 dark:text-white;
+    }
+    .section-subtitle{
+        @apply text-3xl font-Emkan mt-0.5 md:mt-1.5 text-zinc-700 dark:text-white;
+    }
+    .section-link{
+        @apply flex items-center gap-x-1 h-10 pr-3 pl-1 text-xl tracking-tightest rounded-md font-Emkan mt-1.5 text-orange-300 md:hover:bg-orange-300/20 transition-colors  ;
+    }
+
+    .offer{
+        @apply text-gray-400 relative
+    }
+    .offer::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        background-color: #EF4444;
+    }
+    .category-banner-item1{
+        background:linear-gradient(270deg,rgb(0 , 0 , 0 , 0.6) 33.85% , rgb(243 , 244 , 246 , 0.1) 100%), url("../image/categories/category-right.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .category-banner-item2{
+        background:linear-gradient(270deg,rgb(0 , 0 , 0 , 0.6) 33.85% , rgb(243 , 244 , 246 , 0.1) 100%), url("../image/categories/category-left.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@layer  utilities {
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+}

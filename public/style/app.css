@@ -862,11 +862,6 @@ video {
   margin-right: auto;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -880,16 +875,20 @@ video {
   margin-bottom: 0.125rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mt-1 {
@@ -914,14 +913,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .line-clamp-2 {
@@ -1344,8 +1335,8 @@ video {
   padding-left: 1.25rem;
 }
 
-.pr-12 {
-  padding-right: 3rem;
+.pr-7 {
+  padding-right: 1.75rem;
 }
 
 .pt-3 {
@@ -1354,10 +1345,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pr-7 {
-  padding-right: 1.75rem;
 }
 
 .text-center {
@@ -1385,6 +1372,11 @@ video {
   line-height: 2rem;
 }
 
+.text-2xl\/6 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1408,16 +1400,6 @@ video {
 .text-xs\/\[24px\] {
   font-size: 0.75rem;
   line-height: 24px;
-}
-
-.text-2xl\/6 {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-}
-
-.text-xl\/6 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
 }
 
 .tracking-normal {
@@ -1654,14 +1636,14 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
   .md\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+
+  .md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .md\:mb-12 {
@@ -1672,8 +1654,16 @@ video {
     margin-bottom: 0.5rem;
   }
 
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .md\:mb-5 {
     margin-bottom: 1.25rem;
+  }
+
+  .md\:mb-7 {
+    margin-bottom: 1.75rem;
   }
 
   .md\:mt-2 {
@@ -1682,14 +1672,6 @@ video {
 
   .md\:mt-2\.5 {
     margin-top: 0.625rem;
-  }
-
-  .md\:mb-7 {
-    margin-bottom: 1.75rem;
-  }
-
-  .md\:mb-20 {
-    margin-bottom: 5rem;
   }
 
   .md\:inline-block {
@@ -1801,12 +1783,12 @@ video {
     padding-right: 0.875rem;
   }
 
-  .md\:pt-24 {
-    padding-top: 6rem;
-  }
-
   .md\:pr-12 {
     padding-right: 3rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
   }
 
   .md\:font-Danabold {
@@ -1818,9 +1800,9 @@ video {
     line-height: 2rem;
   }
 
-  .md\:text-4xl {
+  .md\:text-4xl\/6 {
     font-size: 2.25rem;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
   }
 
   .md\:text-5xl\/\[64px\] {
@@ -1846,11 +1828,6 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-4xl\/6 {
-    font-size: 2.25rem;
-    line-height: 1.5rem;
   }
 
   .md\:text-xl\/6 {

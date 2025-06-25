@@ -3,7 +3,13 @@
     "tailwindcss": "^3.3.3"
   },
   "scripts": {
-    "config" : "npx tailwindcss -i ./src/input.css -o ./public/style/app.css --watch"
-  }
-
+    "config": "npx tailwindcss -i ./src/input.css -o ./public/style/app.css --watch"
+  },
+  "name": "coffee-shop-project",
+  "description": "",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
